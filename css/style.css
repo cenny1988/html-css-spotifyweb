@@ -51,9 +51,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: calc(100% - 80px);
 }
+
 #sidenavbar .fa-ul{
     margin-left: 1.6em;
+}
+#playlist{
+    flex-grow: 2;
+    overflow-y: scroll;
 }
 #playlist h5{
     margin: 20px 0;
@@ -64,6 +70,7 @@ body{
 #playlist li{
     cursor: pointer;
 }
+
 
 
 
