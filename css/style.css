@@ -22,10 +22,26 @@ body{
 /* sidebar */
 #sidebar{
     width: 200px;
+    padding: 5px 50px 5px 5px;
     /* debug */
     background-color: tomato;
 }
+#logo{
+    line-height: 50px;
+}
+#logo img{
+    vertical-align: middle;
+}
+#logo a{
+    display: block;
+    text-decoration: none;
+}
 
+#sidenavbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /* main */
 #artistmain{
     width: calc(100% - 200px);
