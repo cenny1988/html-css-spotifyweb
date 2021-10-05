@@ -34,6 +34,7 @@ body{
 #sidebar li {
     margin-bottom: 5px;
     margin-left: 5px;
+    display: block;
 }
 
 #logo{
@@ -43,8 +44,8 @@ body{
 #logo img{
     vertical-align: middle;
 }
-#logo a{
-    display: block;
+#logo a:last-child{
+    display: none;
     text-decoration: none;
 }
 
@@ -55,9 +56,17 @@ body{
     height: calc(100% - 80px);
 }
 
-#sidenavbar .fa-ul{
+/* #sidenavbar .fa-ul{
     margin-left: 1.6em;
+} */
+
+#navbarup div{
+    margin: 10px 0;
 }
+#navbarup div span:last-child{
+    margin-left: 10px;
+}
+
 #playlist{
     flex-grow: 2;
     overflow-y: scroll;
@@ -116,4 +125,59 @@ body{
     height: 80px;
     /* debug */
     background-color: black;
+}
+
+
+
+
+
+/* ------------- Responsive ----------- */
+@media all and (max-width:420px) {
+    #playlist{
+        display: none;
+    }
+    #sidebar{
+        width: 50px;
+        padding: 5px;
+    }
+    #sidenavbar>#navbarup>div>a>span:last-child{
+        display: none;
+    }
+    #sidenavbar>#navbarup>div>a>span:first-child{
+        display: block;
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    #logo{
+        line-height: normal;
+    }
+    #logo a:first-child{
+        display: none;
+    }
+    #logo a:last-child{
+        display: block;
+        text-decoration: none;
+        width: 40px;
+    }
+
+    #navaccount div span:last-child{
+        display: none;
+    }
+    #navaccount{
+        text-align: center;
+    }
+    #navaccount i{
+        display: block;
+        font-size: 1.4em;
+        text-align: center;
+        margin-right: 0;
+    }
+    #navaccount div:first-child{
+        border-bottom: 0;
+    }
+    #artistmain{
+        width: calc(100% - 50px);
+    }
+    
 }
