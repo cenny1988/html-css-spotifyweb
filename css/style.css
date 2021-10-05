@@ -6,7 +6,7 @@
 /* regole generali */
 body{
     font-family: 'Montserrat', sans-serif;
-
+    font-size: 15px;
 }
 
 
@@ -22,12 +22,22 @@ body{
 /* sidebar */
 #sidebar{
     width: 200px;
-    padding: 5px 50px 5px 5px;
+    padding: 5px 50px 5px 10px;
+    color: rgb(155, 155, 155);
     /* debug */
-    background-color: tomato;
+    background-color: #000;
 }
+#sidebar a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+}
+#sidebar li {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
 #logo{
-    line-height: 50px;
+    line-height: 80px;
 }
 #logo img{
     vertical-align: middle;
@@ -42,6 +52,21 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+#sidenavbar .fa-ul{
+    margin-left: 1.6em;
+}
+#playlist h5{
+    margin: 20px 0;
+}
+#playlist ul{
+    list-style: none;
+}
+#playlist li{
+    cursor: pointer;
+}
+
+
+
 /* main */
 #artistmain{
     width: calc(100% - 200px);
