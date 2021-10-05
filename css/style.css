@@ -22,7 +22,7 @@ body{
 /* sidebar */
 #sidebar{
     width: 200px;
-    padding: 5px 50px 5px 10px;
+    padding: 10px;
     color: rgb(155, 155, 155);
     /* debug */
     background-color: #000;
@@ -38,6 +38,7 @@ body{
 
 #logo{
     line-height: 80px;
+    padding-right: 40px;
 }
 #logo img{
     vertical-align: middle;
@@ -63,15 +64,44 @@ body{
 }
 #playlist h5{
     margin: 20px 0;
+    color: #fff;
 }
+#newplaylist{
+    font-size: 1.4em;
+    margin: 10px 0 ;
+}
+#newplaylist span{
+    display: inline-block;
+}
+#newplaylist span:first-child{
+    background-color: rgb(155, 155, 155);
+    color: #000;
+    padding: 5px;
+    text-align: center;
+    line-height: 22px;
+    width: 30px;
+    height: 30px;
+}
+
 #playlist ul{
     list-style: none;
 }
 #playlist li{
     cursor: pointer;
 }
+#navaccount div:first-child{
+    border-bottom: 1px solid rgb(155, 155, 155);
+}
+#navaccount div{
+    padding: 5px 0;
+}
+#navaccount div:nth-child(2){
+    color: #fff;
+}
 
-
+#navaccount i{
+    margin-right: 8px;
+}
 
 
 /* main */
