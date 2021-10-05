@@ -6,5 +6,36 @@
 /* regole generali */
 body{
     font-family: 'Montserrat', sans-serif;
-    
+
+}
+
+
+/* wrapper contenitore */
+#wrappercontainer{
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    /* debug */
+    /* background-color: bisque; */
+}
+
+/* sidebar */
+#sidebar{
+    width: 200px;
+    /* debug */
+    background-color: tomato;
+}
+
+/* main */
+#artistmain{
+    width: calc(100% - 200px);
+    /* debug */
+    background-color: blueviolet;
+}
+
+/* playbar */
+#playbar{
+    height: 80px;
+    /* debug */
+    background-color: black;
 }
