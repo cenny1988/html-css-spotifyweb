@@ -26,7 +26,6 @@ body{
     width: 200px;
     padding: 10px;
     color: rgb(155, 155, 155);
-    /* debug */
     background-color: #000;
 }
 #sidebar a{
@@ -207,8 +206,6 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: #282828;
-    /* debug */
-    /* background-color: beige; */
 }
 
 #playersx, #playerdx{
