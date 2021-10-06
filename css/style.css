@@ -211,7 +211,7 @@ body{
     /* background-color: beige; */
 }
 
-#playersx{
+#playersx, #playerdx{
     display: flex;
     align-items: center;  
 }
@@ -227,10 +227,10 @@ body{
     font-size: .8em;
 }
 #playersx div:nth-child(3){
-    margin: 0 35px;
+    margin: 0 15px;
 }
-#playersx div:nth-child(3) i{
-    padding: 0 5px;
+#playersx div:nth-child(3) i, #playerdx div:first-child i{
+    padding: 0 3px;
 }
 
 
@@ -255,11 +255,18 @@ body{
     color: #fff;
     cursor: pointer;
 }
-
-#track{
-    flex-grow: 4;
+.faketrack{
     border: 2px solid #fff;
     border-radius: 25px;
+    min-width: 70px;
+    margin: 0 10px;
+}
+#track{
+    flex-grow: 4;
+    min-width: 150px;
+}
+#volume{
+    border: 1px solid #fff;
 }
 #trackbar>div{
     font-size: .7em;
@@ -319,7 +326,9 @@ body{
         border-bottom: 0;
     }
     /* sezione centrale wrapper */
-    
+    #artistmain{
+        width: calc(100% - 50px);
+    }
     .containerflex{
         flex-wrap: wrap;
     }
