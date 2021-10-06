@@ -174,16 +174,16 @@ body{
 .containerflex{
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .flexitem{
     max-width: calc(100% / 6);
-    flex-shrink: 2;
     padding: 5px;
     text-align: center;
     margin-bottom: 20px;
     /* debug */
-    min-width: 170px;
+    /* flex-shrink: 2; */
+    /* min-width: 170px; */
 }
 .album img{
     width: 100%;
@@ -205,7 +205,7 @@ body{
 
 
 /* ------------- Responsive ----------- */
-@media all and (max-width:560px) {
+@media all and (max-width:320px) {
     #upgrade{
         width: calc(100% - 50px);
     }
