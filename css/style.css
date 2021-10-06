@@ -69,7 +69,7 @@ body{
 
 #playlist{
     flex-grow: 2;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 #playlist h5{
     margin: 20px 0;
@@ -79,6 +79,8 @@ body{
     font-size: 1.4em;
     margin: 10px 0 ;
 }
+
+
 #newplaylist span{
     display: inline-block;
 }
@@ -91,9 +93,13 @@ body{
     width: 30px;
     height: 30px;
 }
+/* #playlist div:nth-child(2){
+    overflow-y: auto;
+} */
 
 #playlist ul{
     list-style: none;
+    display: block;
 }
 #playlist li{
     cursor: pointer;
@@ -205,10 +211,13 @@ body{
 
 
 /* ------------- Responsive ----------- */
-@media all and (max-width:320px) {
+/* dimensione xs */
+@media all and (max-width:552px) {
+    /* sezione update */
     #upgrade{
         width: calc(100% - 50px);
     }
+    /* sezione barra laterale */
     #playlist{
         display: none;
     }
@@ -252,8 +261,41 @@ body{
     #navaccount div:first-child{
         border-bottom: 0;
     }
+    /* sezione centrale wrapper */
     #artistmain{
         width: calc(100% - 50px);
     }
+    .containerflex{
+        flex-wrap: wrap;
+    }
+    .flexitem{
+        max-width: calc(100% / 2);
+    }
+}
+
+/* dimensione s */
+@media all and (min-width:553px) and (max-width:639px){
+    /* sezione centrale wrapper */
+    .containerflex{
+        flex-wrap: wrap;
+    }
+    .flexitem{
+        max-width: calc(100% / 2);
+    }
+}
+
+/* dimensione md */
+@media all and (min-width:640px) and (max-width:878px){
+    /* sezione centrale wrapper */
+    .containerflex{
+        flex-wrap: wrap;
+    }
+    .flexitem{
+        max-width: calc(100% / 4);
+    }
+}
+
+/* dimensione lg */
+@media all and (min-width:879px) and (max-width:1440px){
     
 }
