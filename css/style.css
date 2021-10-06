@@ -216,11 +216,10 @@ body{
 
 #playersx div:first-child img{
     height: 50px;
-    padding: 5px;   
+    padding: 5px;
+    margin-right: 10px;   
 }
-#playersx div:nth-child(2){
-    padding: 0 10px;
-}
+
 .albumdescript h4{
     color: #fff;
     font-size: .8em;
@@ -272,6 +271,18 @@ body{
 
 
 /* ------------- Responsive ----------- */
+/* prova dimensione <425px */
+@media all and (max-width:425px){
+    #playersx div:nth-child(3) {
+        display: none;
+    }
+    #playercenter {
+        width: 50%;
+    } 
+    #playercenter>#playerbutton div:first-child i{
+        font-size: 1em;
+    }
+}
 /* dimensione xs */
 @media all and (max-width:552px) {
     /* sezione update */
@@ -332,10 +343,25 @@ body{
     .flexitem{
         max-width: calc(100% / 2);
     }
-    /* sezione player */
+    
+    /*  footer playbar  */
     #playersx div:first-child img{
         display: none;   
     }
+    #playersx div:nth-child(2){
+        margin-left: 5px;
+        width: min-content;
+    }
+    #playersx div:nth-child(3) {
+        margin: 0 5px;
+    }
+    #volume {
+        min-width: 40px;
+    }
+    #playercenter>#playerbutton div:first-child i{
+        font-size: 1em;
+    }
+    
 }
 
 /* dimensione s */
@@ -347,6 +373,17 @@ body{
     .flexitem{
         max-width: calc(100% / 2);
     }
+    /*  footer playbar  */
+    #playersx div:nth-child(2){
+        margin-left: 5px;
+        width: min-content;
+    }
+    #playersx div:nth-child(3) {
+        margin: 0 5px;
+    }
+    #volume {
+        min-width: 40px;
+    }
 }
 
 /* dimensione md */
@@ -357,6 +394,14 @@ body{
     }
     .flexitem{
         max-width: calc(100% / 4);
+    }
+    /*  footer playbar  */
+    #playersx div:nth-child(2){
+        margin-left: 5px;
+        width: min-content;
+    }
+    #playersx div:nth-child(3) {
+        margin: 0 5px;
     }
 }
 
