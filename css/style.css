@@ -9,10 +9,6 @@ body{
     font-size: 15px;
     color: rgb(155, 155, 155);
 }
-/* #mainflexcol{
-    display: flex;
-    flex-direction: column;
-} */
 
 /* wrapper contenitore */
 #wrappercontainer{
@@ -206,12 +202,18 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: #282828;
+    /* debug per fixed playbar */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 #playersx, #playerdx{
     display: flex;
-    align-items: center;  
+    align-items: center;
 }
+
 #playersx div:first-child img{
     height: 50px;
     padding: 5px;   
@@ -230,9 +232,8 @@ body{
     padding: 0 3px;
 }
 
-
 #playercenter{
-    width: 35%;
+    width: 45%;
 }
 
 #trackbar, #playerbutton{
@@ -248,22 +249,21 @@ body{
 }
 #playerbutton>div>i{
     margin: 0 10px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #fff;
     cursor: pointer;
 }
 .faketrack{
     border: 2px solid #fff;
     border-radius: 25px;
-    min-width: 70px;
     margin: 0 10px;
 }
 #track{
     flex-grow: 4;
-    min-width: 150px;
 }
 #volume{
     border: 1px solid #fff;
+    min-width: 60px;
 }
 #trackbar>div{
     font-size: .7em;
