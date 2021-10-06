@@ -122,9 +122,9 @@ body{
 
 /* main */
 #artistmain{
-    width: calc(100% - 200px);
+    width: 100%;
     position: relative;
-    padding: 95px 10px 0;
+    padding: 95px 0;
     color: #fff;
     background-color: #141922;
     overflow-y: auto;
@@ -132,7 +132,7 @@ body{
 
 #upgrade{
     height: 90px;
-    width: calc(100% - 200px);
+    width: 100%;
     background-color: rgba(0, 0, 0, .7);
     position: fixed;
     display: flex;
@@ -177,7 +177,9 @@ body{
     color: rgb(155, 155, 155);
 }
 
-
+.row{
+    padding: 5px;
+}
 .containerflex{
     display: flex;
     justify-content: flex-start;
@@ -201,9 +203,6 @@ body{
 .row h2{
     line-height: 2em;
 }
-/* .flexitem h6{
-    color: rgb(155, 155, 155);
-} */
 .row h6{
     color: rgb(155, 155, 155);
     line-height: 3em;
@@ -211,6 +210,7 @@ body{
 
 /* playbar */
 #playbar{
+    height: 80px;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -222,11 +222,9 @@ body{
 #playersx{
     display: flex;
     align-items: center;
-    height: 80px;
-
-    /* flex-direction: row; */
-
+    
 }
+
 #playersx div:first-child img{
     height: 50px;
     padding: 5px;   
@@ -241,9 +239,9 @@ body{
 #playersx div:nth-child(3){
     margin: 0 35px;
 }
-/* .albumdescript h6{
-    color:rgb(155, 155, 155);
-} */
+#playersx div:nth-child(3) i{
+    padding: 0 5px;
+}
 
 
 
@@ -300,14 +298,16 @@ body{
         border-bottom: 0;
     }
     /* sezione centrale wrapper */
-    #artistmain{
-        width: calc(100% - 50px);
-    }
+    
     .containerflex{
         flex-wrap: wrap;
     }
     .flexitem{
         max-width: calc(100% / 2);
+    }
+    /* sezione player */
+    #playersx div:first-child img{
+        display: none;   
     }
 }
 
