@@ -206,6 +206,9 @@ body{
 
 /* ------------- Responsive ----------- */
 @media all and (max-width:560px) {
+    #upgrade{
+        width: calc(100% - 50px);
+    }
     #playlist{
         display: none;
     }
