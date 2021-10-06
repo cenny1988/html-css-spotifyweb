@@ -9,15 +9,16 @@ body{
     font-size: 15px;
     color: rgb(155, 155, 155);
 }
-
+/* #mainflexcol{
+    display: flex;
+    flex-direction: column;
+} */
 
 /* wrapper contenitore */
 #wrappercontainer{
     height: calc(100vh - 80px);
     width: 100%;
     display: flex;
-    /* debug */
-    /* background-color: bisque; */
 }
 
 /* sidebar */
@@ -57,10 +58,6 @@ body{
     height: calc(100% - 80px);
 }
 
-/* #sidenavbar .fa-ul{
-    margin-left: 1.6em;
-} */
-
 #navbarup div{
     margin: 10px 0;
 }
@@ -94,9 +91,6 @@ body{
     width: 30px;
     height: 30px;
 }
-/* #playlist div:nth-child(2){
-    overflow-y: auto;
-} */
 
 #playlist ul{
     list-style: none;
@@ -122,8 +116,7 @@ body{
 
 /* main */
 #artistmain{
-    width: 100%;
-    position: relative;
+    width: calc(100% - 200px);
     padding: 95px 0;
     color: #fff;
     background-color: #141922;
@@ -132,7 +125,7 @@ body{
 
 #upgrade{
     height: 90px;
-    width: 100%;
+    width: calc(100% - 200px);
     background-color: rgba(0, 0, 0, .7);
     position: fixed;
     display: flex;
@@ -213,7 +206,6 @@ body{
     height: 80px;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     background-color: #282828;
     /* debug */
     /* background-color: beige; */
@@ -221,10 +213,8 @@ body{
 
 #playersx{
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 }
-
 #playersx div:first-child img{
     height: 50px;
     padding: 5px;   
@@ -244,6 +234,33 @@ body{
 }
 
 
+#playercenter{
+    width: 35%;
+    text-align: center;
+}
+#playerbutton {
+    height: 40px;
+    line-height: 40px;
+}
+#playerbutton>i{
+    vertical-align: middle;
+    margin: 0 10px;
+    font-size: 1.3em;
+    color: #fff;
+    cursor: pointer;
+}
+#track{
+    width: 70%;
+    vertical-align: middle;
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+#trackbar>div{
+    display: inline-block;
+    font-size: .7em;
+    padding: 0 10px;
+
+}
 
 
 /* ------------- Responsive ----------- */

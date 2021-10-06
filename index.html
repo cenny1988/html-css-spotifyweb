@@ -16,217 +16,235 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- div wrapper flessibile -->
-    <div id="wrappercontainer">
-        <!-- sidebare di navigazione -->
-        <div id="sidebar">
-            <div id="logo">
-                <a href="#"><img src="img/logo.svg" alt="logo"></a>
-                <a href="#"><img src="img/logo-small.svg" alt="logo"></a>  
+    <!-- <div id="mainflexcol"> -->
+
+        <!-- div wrapper flessibile -->
+        <div id="wrappercontainer">
+
+            <!-- sidebare di navigazione -->
+            <div id="sidebar">
+                <div id="logo">
+                    <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                    <a href="#"><img src="img/logo-small.svg" alt="logo"></a>  
+                </div>
+    
+                <div id="sidenavbar">
+                    <div id="navbarup">
+                            <div><a href="#"><span ><i class="fas fa-home"></i></span> <span>Home</span> </a></div>
+                            <div><a href="#"><span ><i class="fas fa-search"></i></span> <span>Cerca</span> </a></div>
+                            <div><a href="#"><span ><i class="fas fa-book-open"></i></span> <span>La tua libreria</span> </a></div>
+                    </div>
+    
+                    <div id="playlist">
+                            <h5>PLAYLIST</h5>
+                            <div id="newplaylist">
+                                <span><i class="fas fa-plus"></i></span>
+                                <span>Crea Playlist</span></i>
+                            </div>
+                            <div>
+                                <ul>
+                                    <a href="#"><li>Nome Playlist</li></a>
+                                    <a href="#"><li>Nome Playlist</li></a>
+                                    <a href="#"><li>Nome Playlist</li></a>
+                                    <a href="#"><li>Nome Playlist</li></a>
+                                    <a href="#"><li>Nome Playlist</li></a>
+                                    <a href="#"><li>Nome Playlist</li></a>
+                                    <a href="#"><li>Nome Playlist</li></a>
+                                    <a href="#"><li>Nome Playlist</li></a>
+                                </ul>
+                            </div>
+                    </div>
+    
+                    <div id="navaccount">
+                        <div><a href="#"> <span><i class="far fa-arrow-alt-circle-down"></i></span> <span>Installa app</span> </a></div>
+                        <div><a href="#"> <span><i class="fas fa-user"></i></span> <span>Nome Cognome</span> </a></div>
+                    </div>
+                </div>
             </div>
 
-            <div id="sidenavbar">
-                <div id="navbarup">
-                        <div><a href="#"><span ><i class="fas fa-home"></i></span> <span>Home</span> </a></div>
-                        <div><a href="#"><span ><i class="fas fa-search"></i></span> <span>Cerca</span> </a></div>
-                        <div><a href="#"><span ><i class="fas fa-book-open"></i></span> <span>La tua libreria</span> </a></div>
+            <!-- wrapper flex con scorrimento -->
+            <main id="artistmain">
+                <div id="upgrade">
+                    <div>
+                        <a href="#" id="upgradecall">effettua l'upgrade </a>
+                    </div>
                 </div>
-
-                <div id="playlist">
-                        <h5>PLAYLIST</h5>
-                        <div id="newplaylist">
-                            <span><i class="fas fa-plus"></i></span>
-                            <span>Crea Playlist</span></i>
+                
+                <nav id="topnavbar">
+                    <ul>
+                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
+                    </ul>
+                </nav>
+    
+                <div class="row">
+                    <div class="rowtitle">
+                        <h2>Ascoltati di recente</h2>
+                    </div>
+                    <div class="containerflex">
+                        <div class="flexitem">
+                            <div class="album">
+                                <img src="img/metal_lifting.jpg" alt="metal">
+                            </div>
+                            <div class="albumdescript">
+                                <h4>Heavy Metal</h4>
+                                <h6>Subtitle</h6>
+                            </div>
                         </div>
-                        <div>
-                            <ul>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                                <a href="#"><li>Nome Playlist</li></a>
-                            </ul>
+    
+                        <div class="flexitem">
+                            <div class="album">
+                                <img src="img/stranger.jpeg" alt="metal">
+                            </div>
+                            <div class="albumdescript">
+                                <h4>Strange Thinks vol.1</h4>
+                                <h6>Subtitle Subtitle Subtitle</h6>
+                            </div>
                         </div>
+    
+                        <div class="flexitem">
+                            <div class="album">
+                                <img src="img/aquietplace.jpeg" alt="metal">
+                            </div>
+                            <div class="albumdescript">
+                                <h4>A quiet palace</h4>
+                                <h6>Subtitle Subtitle Subtitle</h6>
+                            </div>
+                        </div>
+    
+                        <div class="flexitem">
+                            <div class="album">
+                                <img src="img/split.jpeg" alt="metal">
+                            </div>
+                            <div class="albumdescript">
+                                <h4>Split</h4>
+                                <h6>Subtitle</h6>
+                            </div>
+                        </div>
+    
+                        <div class="flexitem">
+                            <div class="album">
+                                <img src="img/cure.jpeg" alt="metal">
+                            </div>
+                            <div class="albumdescript">
+                                <h4>A cure for wellness</h4>
+                                <h6>Subtitle</h6>
+                            </div>
+                        </div>
+    
+                        <div class="flexitem">
+                            <div class="album">
+                                <img src="img/sinister.jpeg" alt="metal">
+                            </div>
+                            <div class="albumdescript">
+                                <h4>Sinister</h4>
+                                <h6>Subtitle</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div id="navaccount">
-                    <div><a href="#"> <span><i class="far fa-arrow-alt-circle-down"></i></span> <span>Installa app</span> </a></div>
-                    <div><a href="#"> <span><i class="fas fa-user"></i></span> <span>Nome Cognome</span> </a></div>
+    
+                <div class="row">
+                    <div class="rowtitle">
+                        <h2>Creato per Jhon Doe</h2>
+                        <h6>Più ascoltati, più accurati saranno i suggerimenti.</h6>
+                    </div>
+                    <div class="containerflex">
+                        <div class="flexitem">
+                            <div class="album">
+                                <img src="img/radar.jpeg" alt="metal">
+                            </div>
+                            <div class="albumdescript">
+                                <h4>Release Radar</h4>
+                                <h6>Subtitle</h6>
+                            </div>
+                        </div>
+    
+                        <div class="flexitem">
+                            <div class="album">
+                                <img src="img/mixdaily.jpeg" alt="metal">
+                            </div>
+                            <div class="albumdescript">
+                                <h4>Daily Mix.1</h4>
+                                <h6>Subtitle Subtitle Subtitle</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
-            </div>
+    
+                <div class="row roundimg">
+                    <div class="rowtitle">
+                        <h2>Artisti più popolari</h2>
+                        <h6>Più ascoltati, più accurati saranno i suggerimenti.</h6>
+                    </div>
+                    <div class="containerflex">
+                        <div class="flexitem">
+                            <div class="album">
+                                <img src="img/youg.jpeg" alt="metal">
+                            </div>
+                            <div class="albumdescript">
+                                <h4>Lana Del Rey</h4>
+                                <h6>Subtitle</h6>
+                            </div>
+                        </div>
+    
+                        <div class="flexitem">
+                            <div class="album">
+                                <img src="img/einaudi.jpeg" alt="metal">
+                            </div>
+                            <div class="albumdescript">
+                                <h4>Ludovico Einaudi</h4>
+                                <h6>Subtitle Subtitle Subtitle</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+            </main>
         </div>
-        <!-- wrapper flex con scorrimento -->
-        <main id="artistmain">
-            <div id="upgrade">
+
+        <!-- footer playbar -->
+        <div id="playbar">
+            <div id="playersx">
                 <div>
-                    <a href="#" id="upgradecall">effettua l'upgrade </a>
+                    <img src="img/metal_lifting.jpg" alt="metal">
+                </div>
+                <div class="albumdescript">
+                    <h4>Heavy Metal</h4>
+                    <h6>Subtitle</h6>
+                </div>
+                <div>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
                 </div>
             </div>
             
-            <nav id="topnavbar">
-                <ul>
-                    <li><a href="#">IN EVIDENZA</a></li>
-                    <li><a href="#">PODCAST</a></li>
-                    <li><a href="#">CLASSIFICHE</a></li>
-                    <li><a href="#">GENERI E MOOD</a></li>
-                    <li><a href="#">NUOVE USCITE</a></li>
-                    <li><a href="#">SCOPRI</a></li>
-                </ul>
-            </nav>
-
-            <div class="row">
-                <div class="rowtitle">
-                    <h2>Ascoltati di recente</h2>
+            <div id="playercenter">
+                <div id="playerbutton">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo"></i>
                 </div>
-                <div class="containerflex">
-                    <div class="flexitem">
-                        <div class="album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
-                        </div>
-                        <div class="albumdescript">
-                            <h4>Heavy Metal</h4>
-                            <h6>Subtitle</h6>
-                        </div>
-                    </div>
-
-                    <div class="flexitem">
-                        <div class="album">
-                            <img src="img/stranger.jpeg" alt="metal">
-                        </div>
-                        <div class="albumdescript">
-                            <h4>Strange Thinks vol.1</h4>
-                            <h6>Subtitle Subtitle Subtitle</h6>
-                        </div>
-                    </div>
-
-                    <div class="flexitem">
-                        <div class="album">
-                            <img src="img/aquietplace.jpeg" alt="metal">
-                        </div>
-                        <div class="albumdescript">
-                            <h4>A quiet palace</h4>
-                            <h6>Subtitle Subtitle Subtitle</h6>
-                        </div>
-                    </div>
-
-                    <div class="flexitem">
-                        <div class="album">
-                            <img src="img/split.jpeg" alt="metal">
-                        </div>
-                        <div class="albumdescript">
-                            <h4>Split</h4>
-                            <h6>Subtitle</h6>
-                        </div>
-                    </div>
-
-                    <div class="flexitem">
-                        <div class="album">
-                            <img src="img/cure.jpeg" alt="metal">
-                        </div>
-                        <div class="albumdescript">
-                            <h4>A cure for wellness</h4>
-                            <h6>Subtitle</h6>
-                        </div>
-                    </div>
-
-                    <div class="flexitem">
-                        <div class="album">
-                            <img src="img/sinister.jpeg" alt="metal">
-                        </div>
-                        <div class="albumdescript">
-                            <h4>Sinister</h4>
-                            <h6>Subtitle</h6>
-                        </div>
-                    </div>
+                <div id="trackbar">
+                    <div>0:23</div>
+                    <div id="track"></div>
+                    <div>4:25</div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="rowtitle">
-                    <h2>Creato per Jhon Doe</h2>
-                    <h6>Più ascoltati, più accurati saranno i suggerimenti.</h6>
-                </div>
-                <div class="containerflex">
-                    <div class="flexitem">
-                        <div class="album">
-                            <img src="img/radar.jpeg" alt="metal">
-                        </div>
-                        <div class="albumdescript">
-                            <h4>Release Radar</h4>
-                            <h6>Subtitle</h6>
-                        </div>
-                    </div>
-
-                    <div class="flexitem">
-                        <div class="album">
-                            <img src="img/mixdaily.jpeg" alt="metal">
-                        </div>
-                        <div class="albumdescript">
-                            <h4>Daily Mix.1</h4>
-                            <h6>Subtitle Subtitle Subtitle</h6>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="row roundimg">
-                <div class="rowtitle">
-                    <h2>Artisti più popolari</h2>
-                    <h6>Più ascoltati, più accurati saranno i suggerimenti.</h6>
-                </div>
-                <div class="containerflex">
-                    <div class="flexitem">
-                        <div class="album">
-                            <img src="img/youg.jpeg" alt="metal">
-                        </div>
-                        <div class="albumdescript">
-                            <h4>Lana Del Rey</h4>
-                            <h6>Subtitle</h6>
-                        </div>
-                    </div>
-
-                    <div class="flexitem">
-                        <div class="album">
-                            <img src="img/einaudi.jpeg" alt="metal">
-                        </div>
-                        <div class="albumdescript">
-                            <h4>Ludovico Einaudi</h4>
-                            <h6>Subtitle Subtitle Subtitle</h6>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-        </main>
-    </div>
-    <!-- footer playbar -->
-    <div id="playbar">
-        <div id="playersx">
-            <div>
-                <img src="img/metal_lifting.jpg" alt="metal">
-            </div>
-            <div class="albumdescript">
-                <h4>Heavy Metal</h4>
-                <h6>Subtitle</h6>
-            </div>
-            <div>
-                <i class="far fa-heart"></i>
-                <i class="far fa-folder"></i>
+            <div id="playerdx">
+                
             </div>
         </div>
-        
-        <div id="playercenter">
-            
-        </div>
-        <div id="playerdx">
-            
-        </div>
-    </div>
+
+    <!-- </div> -->
     
 </body>
 </html>
