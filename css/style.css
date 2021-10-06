@@ -236,30 +236,34 @@ body{
 
 #playercenter{
     width: 35%;
-    text-align: center;
 }
-#playerbutton {
+
+#trackbar, #playerbutton{
+    display: flex;
+    align-items: center;
     height: 40px;
-    line-height: 40px;
 }
-#playerbutton>i{
-    vertical-align: middle;
+#playerbutton{
+    align-items: flex-end;
+}
+#playerbutton>div{
+    margin: 0 auto;
+}
+#playerbutton>div>i{
     margin: 0 10px;
     font-size: 1.3em;
     color: #fff;
     cursor: pointer;
 }
+
 #track{
-    width: 70%;
-    vertical-align: middle;
+    flex-grow: 4;
     border: 2px solid #fff;
     border-radius: 25px;
 }
 #trackbar>div{
-    display: inline-block;
     font-size: .7em;
     padding: 0 10px;
-
 }
 
 
