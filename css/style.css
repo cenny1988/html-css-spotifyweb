@@ -292,6 +292,23 @@ body{
     width: 100%;
     z-index: 10;
 }
+#playbar a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+}
+
+#playbar i:not(#playersx i){
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Hover/Active effect playbar */
+#playersx i:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+/* --------------------------- */
 
 #playersx, #playerdx{
     display: flex;
@@ -333,24 +350,36 @@ body{
 #playerbutton>div>i{
     margin: 0 10px;
     font-size: 1.2em;
-    color: #fff;
-    cursor: pointer;
+    
 }
 .faketrack{
-    border: 2px solid #fff;
+    border: 2px solid rgb(155, 155, 155);
     border-radius: 25px;
-    margin: 0 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    position: relative;
 }
 #track{
     flex-grow: 4;
 }
+.scorrimento{
+    border: 2px solid #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 25%;
+    right: 75%;
+    position: absolute;
+    bottom: -2px;
+}
+
+
 #volume{
-    border: 1px solid #fff;
+    border: 1px solid ;
     min-width: 60px;
 }
 #trackbar>div{
     font-size: .7em;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 
 
