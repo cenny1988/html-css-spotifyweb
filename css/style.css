@@ -20,7 +20,7 @@ body{
 /* sidebar */
 #sidebar{
     width: 200px;
-    padding: 10px;
+    /* padding: 10px; */
     color: rgb(155, 155, 155);
     background-color: #000;
 }
@@ -37,6 +37,7 @@ body{
 #logo{
     line-height: 80px;
     padding-right: 40px;
+    padding: 10px;
 }
 #logo img{
     vertical-align: middle;
@@ -55,12 +56,14 @@ body{
 
 #navbarup div{
     margin: 10px 0;
+    padding-left: 10px;
 }
 #navbarup div span:last-child{
     margin-left: 10px;
 }
 
 #playlist{
+    padding-left: 10px;
     flex-grow: 2;
     overflow-y: auto;
 }
@@ -94,6 +97,11 @@ body{
 #playlist li{
     cursor: pointer;
 }
+
+#navaccount{
+    padding-left: 10px;
+    padding-bottom: 25px;
+}
 #navaccount div:first-child{
     border-bottom: 1px solid rgb(155, 155, 155);
 }
@@ -106,6 +114,24 @@ body{
 
 #navaccount i{
     margin-right: 8px;
+}
+
+/* hover/active della sidebar*/
+#sidebar a:hover{
+    color: #fff;
+}
+#sidebar li:hover{
+    color: #fff;
+}
+#newplaylist:hover{
+    color: #fff;
+}
+#newplaylist:hover span:first-child{
+    background-color: #fff;
+}
+#sidenavbar>#navbarup div.active{
+    border-left: 2px solid #07fc30;
+    color: #fff;
 }
 
 
@@ -176,7 +202,7 @@ body{
     max-width: calc(100% / 6);
     padding: 5px;
     text-align: center;
-    margin-bottom: 10px 0;
+    margin-bottom: 10px;
 }
 .rowtitle{
     margin: 10px;
