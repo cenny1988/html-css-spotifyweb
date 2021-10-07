@@ -302,14 +302,6 @@ body{
     color: #fff;
 }
 
-/* Hover/Active effect playbar */
-#playersx i:hover{
-    cursor: pointer;
-    color: #fff;
-}
-
-/* --------------------------- */
-
 #playersx, #playerdx{
     display: flex;
     align-items: center;
@@ -363,24 +355,40 @@ body{
     flex-grow: 4;
 }
 .scorrimento{
-    border: 2px solid #fff;
     border-radius: 25px;
     cursor: pointer;
     width: 25%;
-    right: 75%;
+    right: 76%;
     position: absolute;
+    border: 2px solid #fff;
+}
+#track>.scorrimento{
     bottom: -2px;
 }
-
-
 #volume{
     border: 1px solid ;
     min-width: 60px;
+}
+#volume>.scorrimento{
+    border: 1px solid #fff;
+    bottom: -1px;
 }
 #trackbar>div{
     font-size: .7em;
     /* padding: 0 10px; */
 }
+
+/* Hover/Active effect playbar */
+#playersx i:hover{
+    cursor: pointer;
+    color: #fff;
+}
+#track.faketrack:hover .scorrimento, #volume.faketrack:hover .scorrimento{
+    border-color: #07fc30;
+}
+
+
+/* --------------------------- */
 
 
 /* ------------- Responsive ----------- */
