@@ -365,6 +365,16 @@ body{
 #track>.scorrimento{
     bottom: -2px;
 }
+.fakeroundpointer{
+    display: none;
+    height: 8px;
+    width: 8px;
+    background-color: #07fc30;
+    position: absolute;
+    border-radius: 50%;
+    right: 76%;
+    bottom: -4px;
+}
 #volume{
     border: 1px solid ;
     min-width: 60px;
@@ -385,6 +395,10 @@ body{
 }
 #track.faketrack:hover .scorrimento, #volume.faketrack:hover .scorrimento{
     border-color: #07fc30;
+}
+
+#track.faketrack:hover .fakeroundpointer, #volume.faketrack:hover .fakeroundpointer{
+    display: block;
 }
 
 
