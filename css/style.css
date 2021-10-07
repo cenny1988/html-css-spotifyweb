@@ -174,9 +174,6 @@ body{
 #topnavbar{
     line-height: 45px;
 }
-
-
-
 #topnavbar ul{
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +190,44 @@ body{
     text-decoration: none;
     display: block;
     color: rgb(155, 155, 155);
+}
+
+
+
+.row{
+    padding: 5px;
+}
+.containerflex{
+    display: flex;
+    justify-content: flex-start;
+}
+.flexitem{
+    max-width: calc(100% / 6);
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.rowtitle{
+    margin: 10px;
+}
+.album{
+    position: relative;
+}
+.album img{
+    width: 100%;
+    object-fit: contain;
+}
+.row.roundimg img {
+    border-radius: 50%;
+}
+
+.row h2{
+    line-height: 2em;
+}
+.row h6{
+    color: rgb(155, 155, 155);
+    line-height: 3em;
 }
 
 /* hover/active main wrapper */
@@ -241,44 +276,9 @@ body{
 .flexitem:hover .overlay{
     display: block;
 }
-
 /* ------------------- */
 
-.row{
-    padding: 5px;
-}
-.containerflex{
-    display: flex;
-    justify-content: flex-start;
-}
-.flexitem{
-    max-width: calc(100% / 6);
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-.rowtitle{
-    margin: 10px;
-}
-.album{
-    position: relative;
-}
-.album img{
-    width: 100%;
-    object-fit: contain;
-}
-.row.roundimg img {
-    border-radius: 50%;
-}
 
-.row h2{
-    line-height: 2em;
-}
-.row h6{
-    color: rgb(155, 155, 155);
-    line-height: 3em;
-}
 
 /* playbar */
 #playbar{
@@ -286,7 +286,6 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: #282828;
-    /* debug per fixed playbar */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -356,7 +355,6 @@ body{
 }
 .scorrimento{
     border-radius: 25px;
-    cursor: pointer;
     width: 25%;
     right: 76%;
     position: absolute;
@@ -385,7 +383,6 @@ body{
 }
 #trackbar>div{
     font-size: .7em;
-    /* padding: 0 10px; */
 }
 
 /* Hover/Active effect playbar */
@@ -400,12 +397,11 @@ body{
 #track.faketrack:hover .fakeroundpointer, #volume.faketrack:hover .fakeroundpointer{
     display: block;
 }
-
-
 /* --------------------------- */
 
 
 /* ------------- Responsive ----------- */
+
 /* prova dimensione <425px */
 @media all and (max-width:425px){
     #playersx div:nth-child(3) {
@@ -418,6 +414,7 @@ body{
         font-size: 1em;
     }
 }
+
 /* dimensione xs */
 @media all and (max-width:552px) {
     /* sezione update */
