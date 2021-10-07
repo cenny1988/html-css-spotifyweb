@@ -412,6 +412,9 @@ body{
     #playercenter>#playerbutton div:first-child i{
         font-size: 1em;
     }
+    #playerdx>div i:last-child{
+        display: none;
+    }
 }
 
 /* dimensione xs */
