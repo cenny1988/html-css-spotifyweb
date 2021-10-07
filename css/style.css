@@ -37,7 +37,7 @@ body{
 #logo{
     line-height: 80px;
     padding-right: 40px;
-    padding: 10px;
+    padding: 5px;
 }
 #logo img{
     vertical-align: middle;
@@ -153,9 +153,8 @@ body{
     flex-direction: row-reverse;
     align-items: center;
     top: 0;
-    right: 0;
     z-index: 10;
-    padding-right: 5px;
+    padding-right: 15px;
 }
 #upgradecall{
     display: block;
@@ -457,11 +456,13 @@ body{
         text-align: center;
     }
     #navaccount i{
-        display: block;
-        font-size: 1.4em;
         text-align: center;
         margin-right: 0;
     }
+    #navaccount>div:last-child{
+        font-size: 1.8em;
+    }
+    
     #navaccount div:first-child{
         border-bottom: 0;
     }
